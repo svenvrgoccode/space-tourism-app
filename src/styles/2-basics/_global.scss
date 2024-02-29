@@ -1,0 +1,36 @@
+@use '../1-helpers-colors/mixins' as *;
+@use '../1-helpers-colors/variables' as *;
+
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  transition: 0.3s ease-out;
+}
+
+::selection{
+  background: $main1;
+  background: $txt2;
+}
+
+.padding{
+  padding: 0rem 2rem;
+}
+
+
+.container{
+  max-width: 130rem;
+  padding: 0rem 2rem;
+}
+
+body{
+  background-color: $main2;
+}
+
+
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}

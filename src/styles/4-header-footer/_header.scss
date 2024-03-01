@@ -2,3 +2,46 @@
 @use '../1-helpers-colors/variables' as *;
 
 
+header{
+  padding-top: 3rem;
+  .logo{
+    margin-left: 2rem;
+  }
+  width: 100%;
+  position: absolute;
+  .container-nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  nav{
+    position: relative;
+    padding: 3rem;
+    padding-right: 10rem;
+    padding-left: 6rem;
+    ul{
+      gap: 6rem;
+      display: flex;
+      li{
+        text-transform: uppercase;
+        position: relative;
+        z-index: 2;
+      }
+      span{
+        margin-right: 1rem;
+        font-weight: bold;
+      }
+    }
+  }
+  nav::before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: hsla(0,0%,100%,.05);
+    backdrop-filter: blur(30px);
+    z-index: 1;
+    left: 0;
+    top: 0;
+  }
+}

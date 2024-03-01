@@ -1,34 +1,66 @@
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Bellefair&display=swap");
 button {
   border: none;
   cursor: pointer;
-  border: 2px solid transparent;
   font-family: inherit;
 }
 
-body {
-  background-color: #F7F5FF;
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  transition: 0.3s ease-out;
 }
 
+::selection {
+  background: #D0D6F9;
+  background: #D0D6F9;
+}
+
+.padding {
+  padding: 0rem 2rem;
+}
+
+.container {
+  max-width: 130rem;
+  padding: 0rem 2rem;
+}
+
+body {
+  background-color: #0B0D17;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
 
 html {
   font-size: 62.5%;
+  scroll-behavior: smooth;
 }
 
 body {
-  font-family: "Inter", sans-serif;
+  font-family: "Barlow Condensed", sans-serif;
+  text-wrap: balance;
 }
 
-
+input, textarea {
+  font-family: inherit;
+  font-size: 1.6rem;
+}
 
 .logo {
-  font-size: 2.4rem;
+  font-size: 2.2rem;
 }
 
-h1, h2, h3, h4, h5, h6 {
-  color: #494B7A;
+ul {
+  padding: 0rem;
+  list-style: none;
 }
 
+div,
 li,
 i,
 button,
@@ -36,44 +68,120 @@ label,
 input,
 p {
   font-size: 1.6rem;
-  color: #494B7A;
+  color: #ffffff;
+  margin: 0;
+  padding: 0;
 }
-
 
 a {
   text-decoration: none;
   font-size: 1.6rem;
-  color: #494B7A;
+  color: #ffffff;
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: #ffffff;
+  font-weight: normal;
+  margin: 0;
+  padding: 0;
+  font-family: "Bellefair", sans-serif;
+}
+
+.sub1 {
+  font-family: "Bellefair", sans-serif;
+}
+
+.sub2 {
+  letter-spacing: 0.235rem;
+  font-family: "Barlow Condensed", sans-serif;
+}
+
+.link {
+  font-family: "Barlow Condensed", sans-serif;
+  letter-spacing: 0.27rem;
 }
 
 h1 {
-  font-size: 6.776rem;
+  font-size: 15rem;
 }
 
 h2 {
-  font-size: 4.188rem;
+  font-size: 10rem;
 }
 
 h3 {
-  font-size: 2.588rem;
+  font-size: 5.6rem;
 }
 
 h4 {
-  font-size: 1.588rem;
+  font-size: 3.2rem;
 }
 
 h5 {
-  font-size: 1.318rem;
+  font-size: 2.8rem;
+  font-family: "Barlow Condensed", sans-serif;
+  letter-spacing: 0.475rem;
 }
 
 h6 {
-  font-size: 1.218rem;
+  font-size: 1.1rem;
 }
 
-ul {
-  list-style: none;
+.home {
+  height: 100vh;
+  background-image: url("/public/images/home/background-home-desktop.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.home .row {
+  display: none;
 }
 
-
+header {
+  padding-top: 3rem;
+  width: 100%;
+  position: absolute;
+}
+header .logo {
+  margin-left: 2rem;
+}
+header .container-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+header nav {
+  position: relative;
+  padding: 3rem;
+  padding-right: 10rem;
+  padding-left: 6rem;
+}
+header nav ul {
+  gap: 6rem;
+  display: flex;
+}
+header nav ul li {
+  text-transform: uppercase;
+  position: relative;
+  z-index: 2;
+}
+header nav ul span {
+  margin-right: 1rem;
+  font-weight: bold;
+}
+header nav::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: hsla(0deg, 0%, 100%, 0.05);
+  backdrop-filter: blur(30px);
+  z-index: 1;
+  left: 0;
+  top: 0;
+}
 
 /*# sourceMappingURL=style.css.map */

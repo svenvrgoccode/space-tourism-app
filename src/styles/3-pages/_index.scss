@@ -2,3 +2,11 @@
 @use '../1-helpers-colors/variables' as *;
 
 
+.home{
+  height: 100vh;
+  background-image: url("/public/images/home/background-home-desktop.jpg");
+  @include background;
+  .row{
+    display: none;
+  }
+}
